@@ -30,7 +30,7 @@ Considering that the service is running in your local at 8080, here are the curl
 2. The users are not validated. So if you give an invalid user, the id gets stored but upon retrieval, it will show null.
 3. The splitTypes are EQUAL, PERCENT, MANUAL with validations along with it. I'll add examples for all 3.
 >curl --location --request POST 'http://localhost:8080/expense' \
---header 'user: U1' \
+--header 'user: 1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "addedBy": "vamm",
@@ -46,12 +46,12 @@ Considering that the service is running in your local at 8080, here are the curl
 }'
 
 >curl --location --request POST 'http://localhost:8080/expense' \
---header 'user: U1' \
+--header 'user: 1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "addedBy": "vamm",
-"label": "asdf",
-"description": "asdf",
+"label": "pizza",
+"description": "sauce",
 "paidBySplitType": "MANUAL",
 "paidByUserInfo": "2 3",
 "paidAmounts": "750 250",
@@ -62,12 +62,12 @@ Considering that the service is running in your local at 8080, here are the curl
 }'
 
 >curl --location --request POST 'http://localhost:8080/expense' \
---header 'user: U1' \
+--header 'user: 1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "addedBy": "vamm",
-"label": "asdf",
-"description": "asdf",
+"label": "pizza",
+"description": "damn",
 "paidBySplitType": "MANUAL",
 "paidByUserInfo": "1 3",
 "paidAmounts": "750 250",
