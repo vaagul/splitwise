@@ -14,6 +14,12 @@ Just another expense sharing service
 4. I started to play with groups but I'm focussing more on what needs to be delivered. 
 5. I'll also add a swagger doc over the time
 6. As for unit tests, I started writing for get all users, but time was not on my side. Maybe I'll add them later on.
+## Accessing the db
+After the service is up, go to
+>http://localhost:8080/h2-console/ 
+I have'nt changed anything else so a direct login with the defaut creds(uname: sa) should work fine.
+
+Maybe I'll add screenshots as well. That may be helpful I guess. But it's fairly straight forward.
 
 ## Test cases
 Considering that the service is running in your local at 8080, here are the curl commands for testing.
